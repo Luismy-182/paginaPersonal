@@ -1,0 +1,59 @@
+@use'base/variables' as v;
+@use'base/mixins' as m;
+
+.categorias{
+
+    
+    
+    @include m.tablet{
+        
+    @include m.grid(2, 1rem);
+
+    }
+
+    @include m.desktop{
+        @include m.grid(4,1rem);
+    }
+
+    
+}
+.categoria{
+
+    :not(:first-of-type){
+        margin-top: 1rem;       
+    }
+
+    padding: 4rem; //version mobile
+
+
+
+
+    p{
+        
+        margin-top: 2.5rem;
+        text-align: center;
+        .negrita{
+            font-weight: bold;
+            font-size: 3rem;
+            display: block;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .imagen-categoria{
+        padding: 6rem 6rem 2rem 6rem;
+        @include m.tablet{
+            padding:3rem
+        }
+    }
+    
+
+
+    @include m.tablet{
+        padding: 2rem;
+        justify-items: center;
+        align-items: center;
+    }
+}
+   
