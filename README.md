@@ -1,2 +1,2 @@
 # paginaPersonal
-about me, Miguel Angel Suarez
+About me, Miguel Angel Suarez
